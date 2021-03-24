@@ -1,6 +1,7 @@
 pragma solidity 0.6.10;
 
-// SPDX-License-Identifier: UNLICENSED
+// Ethereum GAS fees currently too high to deploy to mainnet-- FOR MAINNET DEPLOYMENT 1, Connect Metamask wallet 2, use uncx to do ILO 3, use uniswap to lock liquidity
+4, eddit code so you can have it submitted with deployment. 5, this code works-- remix deploys.
 
 /*
  * @dev Provides information about the current execution context, including the
