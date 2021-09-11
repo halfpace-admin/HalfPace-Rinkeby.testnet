@@ -65,14 +65,12 @@ contract PACEToken is ERC20Interface, SafeMath {
         symbol = "PACE";
         name = "PACE Token";
         decimals = 8;
-        _totalSupply = 5200000000000000;
-        _circulatingSupply = 3200000000000000;
-        _liquiditySupply = 1000000000000000;
-        _arbitrageSupply = 1000000000000000;
-        balances[icowalletgoeshere] = _circulatingSupply; 
-        balances[liquiditywalletgoeshere] = _liquiditySupply; 
+        _totalSupply = 5000000000000000;
+        _circulatingSupply = 4800000000000000;
+        _arbitrageSupply = 200000000000000;
+        balances[icoliquiditywalletgoeshere] = _circulatingSupply; 
         balances[arbitragewalletgoeshere] = _arbitrageSupply;
-        emit Transfer(address(0), icowalletgoeshere, _circulatingSupply); (address(1), liquiditywalletgoeshere, _liquiditySupply); (address(2), arbitragewalletgoeshere, _arbitrageSupply);
+        emit Transfer(address(0), icoliquiditywalletgoeshere, _circulatingSupply); (address(1), arbitragewalletgoeshere, _arbitrageSupply);
     }
  
     function totalSupply() public constant returns (uint) {
